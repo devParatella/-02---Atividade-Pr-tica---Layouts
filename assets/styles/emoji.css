@@ -1,0 +1,305 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Para centralizar na vertical */
+}
+
+.container {
+  display: grid;
+  width: 50%;
+  aspect-ratio: 1;
+  grid-template-columns: repeat(15, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "w1 w2 w3 w4 w4 top top top top top w5 w5 w6 w7 w8"
+    "w1 w2 w3 l1 l1 front1 front1 front1 front1 front1 r1 r1 w6 w7 w8"
+    "w1 w2 l2 front2 front2 front2 front2 front2 front2 front2 front2 front2 r2 w7 w8"
+    "w1 l3 front3 front3 front3 front3 front3 front3 front3 front3 front3 front3 front3 r3 w8"
+    "w1 l3 front3 front3 front3 front3 front3 front3 front3 front3 front3 front3 front3 r3 w8"
+    "l4 eyebrows eyebrows eyebrows eyebrows eyebrows eyebrows eyebrows eyebrows eyebrows eyebrows eyebrows eyebrows eyebrows r4"
+    "l4 y1 leye1 leye1 leye2 leye2 leye3 center reye1 reye1 reye2 reye2 reye3 y10 r4"
+    "l4 y1 leye1 leye1 leye4 leye5 leye3 y12 reye1 reye1 reye4 reye5 reye3 y10 r4"
+    "l4 y1 y2 leye6 leye6 leye6 y11 y11 y11 reye6 reye6 reye6 y9 y10 r4"
+    "l4 y1 y2 y3 y3 y3 y3 y3 y3 y3 y3 y3 y9 y10 r4"
+    "w9 l5 y2 y3 y3 y3 y3 y3 y3 y3 y3 y3 y9 r5 w16"
+    "w9 l5 y2 y4 y4 sm1 y13 y13 y13 sm3 y5 y5 y9 r5 w16"
+    "w9 w10 l6 y4 y4 y6 sm2 sm2 sm2 y8 y5 y5 r6 w15 w16"
+    "w9 w10 w11 l7 l7 y6 y7 y7 y7 y8 r7 r7 w14 w15 w16"
+    "w9 w10 w11 w12 w12 bottom bottom bottom bottom bottom w13 w13 w14 w15 w16";
+
+}
+
+.black {
+  background-color: black;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.white {
+  background-color: white;
+}
+
+.top {
+  grid-area: top;
+}
+
+.l1 {
+  grid-area: l1;
+}
+
+.r1 {
+  grid-area: r1;
+}
+
+.l2 {
+  grid-area: l2;
+}
+
+.r2 {
+  grid-area: r2;
+}
+
+.l3 {
+  grid-area: l3;
+}
+
+.r3 {
+  grid-area: r3;
+}
+
+.l4 {
+  grid-area: l4;
+}
+
+.r4 {
+  grid-area: r4;
+}
+
+.l5 {
+  grid-area: l5;
+}
+
+.r5 {
+  grid-area: r5;
+}
+
+.r6 {
+  grid-area: r6;
+}
+
+.l6 {
+  grid-area: l6;
+}
+
+.l7 {
+  grid-area: l7;
+}
+
+.bottom {
+  grid-area: bottom;
+}
+
+.r7 {
+  grid-area: r7;
+}
+
+.front3 {
+  grid-area: front3;
+}
+
+.front2 {
+  grid-area: front2;
+}
+
+.front1 {
+  grid-area: front1;
+}
+
+.eyebrows {
+  grid-area: eyebrows;
+}
+
+.leye1 {
+  grid-area: leye1;
+}
+
+.leye2 {
+  grid-area: leye2;
+}
+
+.center {
+  grid-area: center;
+}
+
+.reye1 {
+  grid-area: reye1;
+}
+
+.reye2 {
+  grid-area: reye2;
+}
+
+.reye3 {
+  grid-area: reye3;
+}
+
+.reye4 {
+  grid-area: reye4;
+}
+
+.reye5 {
+  grid-area: reye5;
+}
+
+.reye6 {
+  grid-area: reye6;
+}
+
+.sm1 {
+  grid-area: sm1;
+}
+
+.sm2 {
+  grid-area: sm2;
+}
+
+.sm3 {
+  grid-area: sm3;
+}
+
+.leye3 {
+  grid-area: leye3;
+}
+
+.leye4 {
+  grid-area: leye4;
+}
+
+.leye5 {
+  grid-area: leye5;
+}
+
+.leye6 {
+  grid-area: leye6;
+}
+
+.w1 {
+  grid-area: w1;
+}
+
+.w2 {
+  grid-area: w2;
+}
+
+.w3 {
+  grid-area: w3;
+}
+
+.w4 {
+  grid-area: w4;
+}
+
+.w5 {
+  grid-area: w5;
+}
+
+.w6 {
+  grid-area: w6;
+}
+
+.w7 {
+  grid-area: w7;
+}
+
+.w8 {
+  grid-area: w8;
+}
+
+.w9 {
+  grid-area: w9;
+}
+
+.w10 {
+  grid-area: w10;
+}
+
+.w11 {
+  grid-area: w11;
+}
+
+.w12 {
+  grid-area: w12;
+}
+
+.w13 {
+  grid-area: w13;
+}
+
+.w14 {
+  grid-area: w14;
+}
+
+.w15 {
+  grid-area: w15;
+}
+
+.w16 {
+  grid-area: w16;
+}
+
+.y1 {
+  grid-area: y1;
+}
+
+.y2 {
+  grid-area: y2;
+}
+
+.y3 {
+  grid-area: y3;
+}
+
+.y4 {
+  grid-area: y4;
+}
+
+.y5 {
+  grid-area: y5;
+}
+
+.y6 {
+  grid-area: y6;
+}
+
+.y7 {
+  grid-area: y7;
+}
+
+.y8 {
+  grid-area: y8;
+}
+
+.y9 {
+  grid-area: y9;
+}
+
+.y10 {
+  grid-area: y10;
+}
+
+.y11 {
+  grid-area: y11;
+}
+
+.y12 {
+  grid-area: y12;
+}
+
+.y13 {
+  grid-area: y13;
+}
